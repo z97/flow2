@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import { Button } from 'react-bootstrap';
 import './App.css';
+
+
 
 function App() {
   return (
@@ -50,7 +53,21 @@ function App() {
             React Redux
           </a>
         </span>
+        <Button variant="primary" className="mr-1">
+        <div className="container-fluid mt-3">
+  <h1>Two Unequal Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div className="row">
+    <div className="col-sm-4 p-3 bg-primary text-white">.col</div>
+    <div className="col-sm-8 p-3 bg-dark text-white">.col</div>
+  </div>
+</div>
+      Primary
+    </Button>
       </header>
+
+
     </div>
   );
 }
